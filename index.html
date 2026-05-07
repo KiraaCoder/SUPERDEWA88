@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SUPERDEWA88 - Download APK</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:
+      radial-gradient(circle at top, #1e90ff 0%, #081120 45%, #04070d 100%);
+      color:white;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      position:relative;
+    }
+
+    .bg-glow{
+      position:absolute;
+      width:700px;
+      height:700px;
+      background:#008cff;
+      filter:blur(180px);
+      opacity:0.25;
+      border-radius:50%;
+      top:-250px;
+      right:-150px;
+    }
+
+    .card{
+      position:relative;
+      z-index:2;
+      width:90%;
+      max-width:430px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(14px);
+      border-radius:30px;
+      padding:35px 25px;
+      text-align:center;
+      box-shadow:
+      0 0 25px rgba(0,140,255,0.35),
+      0 0 80px rgba(0,140,255,0.15);
+    }
+
+    .logo{
+      width:130px;
+      height:130px;
+      border-radius:28px;
+      margin:auto;
+      margin-bottom:20px;
+      overflow:hidden;
+      border:3px solid rgba(255,255,255,0.15);
+      box-shadow:0 0 30px rgba(0,140,255,0.6);
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    h1{
+      font-size:34px;
+      font-weight:800;
+      letter-spacing:1px;
+      background:linear-gradient(to right,#ffffff,#66c3ff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:12px;
+    }
+
+    .desc{
+      font-size:15px;
+      color:#d9ecff;
+      line-height:1.7;
+      margin-bottom:28px;
+    }
+
+    .features{
+      text-align:left;
+      margin-bottom:28px;
+    }
+
+    .features div{
+      background:rgba(255,255,255,0.06);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:14px;
+      border-radius:16px;
+      margin-bottom:12px;
+      font-size:14px;
+    }
+
+    .download-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      padding:17px;
+      border:none;
+      border-radius:18px;
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      font-weight:700;
+      cursor:pointer;
+      background:linear-gradient(135deg,#00a2ff,#005eff);
+      box-shadow:
+      0 0 20px rgba(0,140,255,0.5),
+      inset 0 0 15px rgba(255,255,255,0.2);
+      transition:0.3s;
+    }
+
+    .download-btn:hover{
+      transform:translateY(-3px) scale(1.02);
+      box-shadow:
+      0 0 35px rgba(0,140,255,0.8);
+    }
+
+    .download-btn:active{
+      transform:scale(0.98);
+    }
+
+    .footer{
+      margin-top:18px;
+      font-size:12px;
+      color:#9db7d3;
+    }
+
+    @media(max-width:500px){
+      h1{
+        font-size:28px;
+      }
+
+      .card{
+        padding:28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <div class="card">
+
+    <div class="logo">
+      <!-- GANTI dengan logo kamu -->
+      <img src="logo.png" alt="SUPERDEWA88 Logo">
+    </div>
+
+    <h1>SUPERDEWA88</h1>
+
+    <p class="desc">
+      Nikmati pengalaman aplikasi terbaik dengan tampilan premium,
+      akses super cepat, dan fitur eksklusif hanya di
+      <b>SUPERDEWA88 APK</b>.
+    </p>
+
+    <div class="features">
+      <div>⚡ Ringan & anti lag</div>
+      <div>🔒 Aman dan stabil digunakan</div>
+      <div>🎁 Banyak fitur menarik & update terbaru</div>
+    </div>
+
+    <!-- BUTTON DOWNLOAD -->
+    <button class="download-btn" onclick="downloadAPK()">
+      ⬇ DOWNLOAD APK
+    </button>
+
+    <div class="footer">
+      © 2026 SUPERDEWA88 — All Rights Reserved
+    </div>
+
+  </div>
+
+  <script>
+    function downloadAPK() {
+
+      // GANTI nama file APK sesuai file kamu
+      const apkUrl = "SUPERDEWA88.apk";
+
+      // otomatis download
+      const link = document.createElement("a");
+      link.href = apkUrl;
+      link.download = "SUPERDEWA88.apk";
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+
+</body>
+</html>
